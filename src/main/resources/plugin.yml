@@ -1,4 +1,4 @@
 name: minjunSMP
-version: '0.0.2'
+version: '0.0.3'
 main: com.blueind.minjunSMP.MinjunSMP
 api-version: '1.21'
