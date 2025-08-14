@@ -15,7 +15,7 @@ public class BedListener implements Listener {
     public void onPlayerBedEnter(PlayerBedEnterEvent event) {
         event.setCancelled(true);
         event.getBed().setType(Material.AIR);
-        event.getPlayer().sendMessage("침대를 사용할 수 없습니다!");
+        event.getPlayer().sendMessage("§c침대를 사용할 수 없습니다!");
     }
 
     // 침대 제작을 금지합니다.
@@ -23,7 +23,7 @@ public class BedListener implements Listener {
     public void onCraftItem(CraftItemEvent event) {
         if (event.getRecipe().getResult().getType().name().contains("_BED")) {
             event.setCancelled(true);
-            event.getWhoClicked().sendMessage("침대를 제작할 수 없습니다!");
+            event.getWhoClicked().sendMessage("§c침대를 제작할 수 없습니다!");
         }
     }
 
@@ -32,7 +32,7 @@ public class BedListener implements Listener {
     public void onBlockPlace(BlockPlaceEvent event) {
         if (event.getBlock().getType().name().contains("_BED")) {
             event.setCancelled(true);
-            event.getPlayer().sendMessage("침대를 설치할 수 없습니다!");
+            event.getPlayer().sendMessage("§c침대를 설치할 수 없습니다!");
         }
     }
 
@@ -41,7 +41,7 @@ public class BedListener implements Listener {
     public void onBlockBreak(BlockBreakEvent event) {
         if (event.getBlock().getType().name().contains("_BED")) {
             event.setDropItems(false);
-            event.getPlayer().sendMessage("침대가 파괴되었지만 아이템은 드랍되지 않습니다.");
+            event.getPlayer().sendMessage("§c침대가 파괴되었지만 아이템은 드랍되지 않습니다.");
         }
     }
 
