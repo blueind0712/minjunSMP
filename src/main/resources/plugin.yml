@@ -1,4 +1,7 @@
 name: minjunSMP
-version: '0.0.3'
+version: '0.0.4'
 main: com.blueind.minjunSMP.MinjunSMP
 api-version: '1.21'
+commands:
+  gamemenu:
+    description: 게임 메뉴 선택
